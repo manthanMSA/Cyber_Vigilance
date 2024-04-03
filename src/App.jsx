@@ -4,7 +4,7 @@ import { Line } from "react-chartjs-2";
 
 import "./App.css";
 
-import chartData from "./data/predict.json";
+import chartData from "/src/data/Advanced persistent_data_1.json";
 
 defaults.maintainAspectRatio = false;
 defaults.responsive = true;
