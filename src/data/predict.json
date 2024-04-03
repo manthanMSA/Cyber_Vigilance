@@ -1,0 +1,28 @@
+{
+    "type": "line",
+    "data": {
+      "labels": ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
+      "datasets": [
+        {
+          "label": "Data and Prediction",
+          "data": [0.8, 0.6, 0.1, 0.7, 0.5, 0.4, 0.4, 0.4, 0.8, 0.9, 0.9, 0.9, 0, 0],
+          "backgroundColor": "rgba(0, 99, 132, 0.2)",
+          "borderColor": "rgba(0, 99, 132, 1)",
+          "borderWidth": 1
+        }
+
+      ]
+    },
+    "options": {
+      "scales": {
+        "yAxes": [
+          {
+            "ticks": {
+              "beginAtZero": true
+            }
+          }
+        ]
+      }
+    }
+  }
+  

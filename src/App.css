@@ -1,0 +1,80 @@
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 2vw;
+  background-color: #ddd;
+}
+
+.navbar {
+  height: 8vh;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.dataCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.dataCard {
+  background-color: #efefef;
+  border-radius: 0.5em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1em;
+  max-width: 100%;
+}
+
+.revenueCard {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+}
+
+.customerAndCategoryCards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.customerCard {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+}
+
+.categoryCard {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .dataCards {
+    flex-direction: column;
+  }
+
+  .customerAndCategoryCards {
+    flex-direction: column;
+  }
+}
