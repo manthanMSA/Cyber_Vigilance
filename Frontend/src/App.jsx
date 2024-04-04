@@ -5,7 +5,8 @@ import { Line } from "react-chartjs-2";
 import "./App.css";
 
 import chartData from "/src/data/Advanced persistent_data_1.json";
-import chartData from "/src/data/Backdoor_data_1.json";
+// import chartData2 from "/src/data/Backdoor_data_1.json";
+import Dashboard1 from "./components/dashboard1";
 
 defaults.maintainAspectRatio = false;
 defaults.responsive = true;
@@ -37,6 +38,7 @@ export const App = () => {
           />
         </div>
       </div>
+      <Dashboard1/>
     </div>
   );
 };
