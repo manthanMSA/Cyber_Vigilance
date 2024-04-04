@@ -78,3 +78,19 @@
     flex-direction: column;
   }
 }
+
+.vulnerability-table {
+  border-collapse: collapse; /* Ensures borders around cells */
+  width: 100%; /* Adjust width as needed */
+}
+
+.vulnerability-table th,
+.vulnerability-table td {
+  border: 1px solid black; /* Defines borders for table headers and cells */
+  padding: 5px; /* Add padding for readability */
+  text-align: left; /* Align content to the left */
+}
+
+.styling{
+  margin-top: 25px;
+}
