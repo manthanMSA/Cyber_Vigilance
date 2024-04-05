@@ -1,0 +1,41 @@
+{
+  "hash": "3a5ae459",
+  "browserHash": "c43cdbc7",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "74597c96",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "6ebe6610",
+      "needsInterop": true
+    },
+    "chart.js/auto": {
+      "src": "../../node_modules/chart.js/auto/auto.js",
+      "file": "chart__js_auto.js",
+      "fileHash": "24e13b17",
+      "needsInterop": false
+    },
+    "react-chartjs-2": {
+      "src": "../../node_modules/react-chartjs-2/dist/index.js",
+      "file": "react-chartjs-2.js",
+      "fileHash": "bc0d070f",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-PSZ65TEE": {
+      "file": "chunk-PSZ65TEE.js"
+    },
+    "chunk-J2FAVRJ5": {
+      "file": "chunk-J2FAVRJ5.js"
+    },
+    "chunk-TCQZMY3T": {
+      "file": "chunk-TCQZMY3T.js"
+    }
+  }
+}
