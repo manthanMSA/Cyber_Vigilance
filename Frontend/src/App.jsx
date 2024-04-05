@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {BrowserRouter as Router,Routes,Route, Link} from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import { Chart as ChartJS, defaults } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 
@@ -20,7 +20,7 @@ defaults.plugins.title.font.size = 20;
 defaults.plugins.title.color = "black";
 
 export const App = () => {
-  
+
   return (
     // <div className="App">
     //   <nav className="navbar">
@@ -44,20 +44,16 @@ export const App = () => {
     // </div>
     <Router>
       <div>
-        <nav className="navbar">
-          <div className="logo">Logo</div>
-          <div className="nav-links">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/vulneribility">Vulneribility Check</Link>
-            {/* <a href="#">Contact</a> */}
-          </div>
-        </nav>
-        
+        <div class="topnav">
+          <a class="active" href="/">HOME</a>
+          <a href="/about">FORCASTING</a>
+          <a href="/vulneribility">CHECK VULNERABILTIY</a>
+        </div>
+
         <Routes>
-          <Route path="/"  element={<Dashboard1/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/vulneribility" element={<Vulnerability/>} />
+          <Route path="/" element={<Dashboard1 />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/vulneribility" element={<Vulnerability />} />
         </Routes>
       </div>
     </Router>
