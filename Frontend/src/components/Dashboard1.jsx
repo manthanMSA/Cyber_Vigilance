@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import Plot from 'react-plotly.js';
+import './Dashboard.css'
 
 function Dashboard1() {
   const [data, setData] = useState([]);
@@ -85,15 +86,15 @@ function Dashboard1() {
   };
 
   return (
-    <div>
 
+    <div className='container'>
       <div>
-        <iframe title="Barclays" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=ab41845d-b7ad-4f5e-813b-6332895832a1&autoAuth=true&ctid=0e6a03b4-28b9-4d7f-ac3c-38163cd83600" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="Barclays" width="541" height="600" src="https://app.powerbi.com/reportEmbed?reportId=ab41845d-b7ad-4f5e-813b-6332895832a1&autoAuth=true&ctid=0e6a03b4-28b9-4d7f-ac3c-38163cd83600" frameborder="0" allowFullScreen="true"></iframe>
       </div>
 
-      <h1>Cybersecurity Incident Dashboard</h1>
-      <div>
-        <h2>Filters</h2>
+      {/* <h1>Cybersecurity Incident Dashboard</h1> */}
+      <div className='filters'>
+        <h2 className='filters select'>Filters</h2>
         <select value={selectedYear} onChange={e => setSelectedYear(e.target.value)}>
           <option value="">Select Year</option>
           {years.map(year => (
@@ -112,29 +113,20 @@ function Dashboard1() {
             <option key={attackType} value={attackType}>{attackType}</option>
           ))}
         </select>
-        <button onClick={applyFilters}>Apply Filters</button>
+        <button className='filters button' onClick={applyFilters}>Apply Filters</button>
       </div>
 
-      <div>
-        <h2>Attack Type Distribution</h2>
-        <Plot
-          data={chartData}
-          layout={chartLayout}
-        />
-      </div>
-      
-      <div>
-        <h2>Country-wise Incident Count</h2>
-        <Plot
-          data={countryIncidentChartData}
-          layout={chartLayout}
-        />
+      <div className="chart-section">
+        <div className="chart-container">
+          <h2 className="chart-section h2">Attack Type Distribution</h2>
+          <Plot data={chartData} layout={chartLayout} />
+        </div>
+        <div className="chart-container">
+          <h2 className="chart-section h2">Country-wise Incident Count</h2>
+          <Plot data={countryIncidentChartData} layout={chartLayout} />
+        </div>
       </div>
 
-      <div>
-        <button>Show Mitigation Techniques</button>
-        {/* Display mitigation techniques if button is clicked */}
-      </div>
     </div>
   );
 }
