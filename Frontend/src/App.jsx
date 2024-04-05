@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import {BrowserRouter as Router,Routes,Route, Link} from "react-router-dom"
 import { Chart as ChartJS, defaults } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
+// import StaggeredDropDown from '/src/components/chatbot.jsx';
 
 import "./App.css";
 
 // import chartData from "/src/data/Advanced persistent_data_1.json";
+import StaggeredDropDown from "./components/chatbot";
 // import chartData2 from "/src/data/Backdoor_data_1.json";
 import Dashboard1 from "./components/dashboard1";
 import Vulnerability from "./pages/Vulnerability";
@@ -42,6 +44,8 @@ export const App = () => {
     //   <Vulnerability/>
     //   <Dashboard1 />
     // </div>
+    
+
     <Router>
       <div>
         <nav className="navbar">
@@ -54,6 +58,7 @@ export const App = () => {
           </div>
         </nav>
         
+        <StaggeredDropDown/>
         <Routes>
           <Route path="/"  element={<Dashboard1/>} />
           <Route path="/about" element={<About/>} />
