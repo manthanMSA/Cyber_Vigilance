@@ -35,6 +35,10 @@
   padding: 2rem;
   width: 100%;
 }
+.graph {
+  width: 50rem;
+  height: 30rem;
+}
 
 .dataCard {
   background-color: #efefef;
