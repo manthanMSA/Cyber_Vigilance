@@ -54,10 +54,7 @@ export const App = () => {
           <a href="/vulneribility">CHECK VULNERABILTIY</a>
         </div>
 
-<<<<<<< HEAD
         <StaggeredDropDown/>
-=======
->>>>>>> 593021a7efeeb0b3736d177bc2d89453fcb15fb3
         <Routes>
           <Route path="/" element={<Dashboard1 />} />
           <Route path="/about" element={<About />} />
