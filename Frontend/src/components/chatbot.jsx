@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  fetchLLMInference,
+  selectInferenceResult,
   BotOpen,
   isbotOpen,
 } from "../redux/features/llmslice";
@@ -8,6 +10,7 @@ import {
 import { motion } from "framer-motion";
 import { Divider, IconButton, TextField } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import { AiFillRobot } from "react-icons/ai";
 import { RiRobot2Fill } from "react-icons/ri";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -16,6 +19,7 @@ const StaggeredDropDown = () => {
   const [msg, setMsg] = useState("");
   const [msgList, setMsgList] = useState([]);
   const dispatch = useDispatch();
+  const inferenceResult = useSelector(selectInferenceResult);
   const isBotOpen = useSelector(isbotOpen);
 
   const toggleBot = () => {
@@ -30,22 +34,21 @@ const StaggeredDropDown = () => {
     dispatch(BotOpen.actions.setBot({ payload: false }));
   };
 
-  const sendMessage = async () => {
+  const sendMessage = () => {
     if (!msg) {
       toast.error("Message cannot be empty");
       return;
     }
-
-    try {
-      const response = await axios.post('/chatbot', { message: msg });
-      const botResponse = response.data.response;
-      setMsgList([...msgList, { msg: botResponse, type: "bot" }]);
-      setMsg("");
-    } catch (error) {
-      console.error('Error sending message:', error);
-      toast.error('Failed to send message. Please try again.');
-    }
+    setMsgList([...msgList, { msg, type: "user" }]);
+    setMsg("");
+    dispatch(fetchLLMInference(msg));
   };
+
+  useEffect(() => {
+    if (inferenceResult) {
+      setMsgList([...msgList, { msg: inferenceResult, type: "bot" }]);
+    }
+  }, [useSelector(selectInferenceResult)]);
 
   return (
     <div className="flex items-center justify-center">
@@ -60,9 +63,9 @@ const StaggeredDropDown = () => {
             <Option
               setOpen={setOpen}
               Icon={
-                <RiRobot2Fill
+                <AiFillRobot
                   style={{
-                    fontSize: 30,
+                    fontSize: 25,
                     color: "black",
                   }}
                 />
@@ -73,6 +76,9 @@ const StaggeredDropDown = () => {
             <div className="h-[300px]">
               <div className="flex flex-col gap-2 h-full overflow-y-auto">
                 {msgList.map((msg, idx) => (
+                  // <div key={idx} className={`flex bg-slate-100 items-center gap-2 max-w-[70%] break-words flex-wrap h-auto border-2 p-2 font-bold whitespace-nowrap rounded-md text-slate-700 ${msg.type === 'user' ? 'self-end' : 'self-start'}`}>
+                  //     <span>{msg.msg}</span>
+                  // </div>
                   <div
                     key={idx}
                     className={`${
@@ -101,6 +107,7 @@ const StaggeredDropDown = () => {
             <Divider />
             <motion.li
               variants={itemVariants}
+              // onClick={() => setOpen(false)}
               className="flex items-center justify-between gap-2 w-full p-2 font-bold whitespace-nowrap rounded-md text-slate-700 "
             >
               <TextField
@@ -132,6 +139,7 @@ const StaggeredDropDown = () => {
           className="flex items-center gap-2 w-16 h-16 justify-center p-4 rounded-full text-indigo-50 bg-indigo-500 hover:bg-indigo-500 transition-colors"
         >
           <motion.span variants={iconVariants}>
+            {/* <SmartToyIcon /> */}
             <RiRobot2Fill
               style={{
                 fontSize: 30,
@@ -149,10 +157,24 @@ const Option = ({ text, Icon, setOpen }) => {
   return (
     <motion.li
       variants={itemVariants}
+      // onClick={() => setOpen(false)}
       className="flex items-center gap-2 w-full p-2 font-bold whitespace-nowrap rounded-md text-slate-700 "
     >
       <motion.span variants={actionIconVariants}>{Icon}</motion.span>
       <span className="text-xl">{text}</span>
+    </motion.li>
+  );
+};
+
+const Option2 = ({ text, Icon, setOpen }) => {
+  return (
+    <motion.li
+      variants={itemVariants}
+      onClick={() => setOpen(false)}
+      className="flex items-center justify-between gap-2 w-full p-2 font-bold whitespace-nowrap rounded-md hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
+    >
+      <span className="text-xl">{text}</span>
+      <motion.span variants={actionIconVariants}>{Icon}</motion.span>
     </motion.li>
   );
 };

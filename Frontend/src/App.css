@@ -34,6 +34,13 @@
   }
 } */
 
+.staggered-dropdown {
+  position: fixed;
+  bottom: 20px; /* adjust as needed */
+  right: 20px; /* adjust as needed */
+}
+
+
 .topnav {
   background-color: #001F3E;
   overflow: hidden;
