@@ -1,10 +1,31 @@
-.threat-container {
-    /* display: flex; */
+
+
+  .threat-container {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
+    align-items: top;
+    height: 300vh;
+    background-color: #ccc;
+    /* width: 70%; */
+    margin-left: 150px;
+    margin-right: 150px;
   }
+  
+  .threat-container > div {
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .threat-container select,
+  .threat-container h2,
+  .threat-container h3 {
+    margin: 10px; /* Add some spacing between elements */
+  }
+  
+  .threat-container select,
+  .threat-container h3 {
+    font-size: 1rem; /* Adjust font size if needed */
+  }
+  
   
   .content {
     text-align: center;
@@ -38,4 +59,12 @@
     font-size: 2rem;
     font-weight: bold;
     color: #333;
+  }
+
+  .doughnut{
+    margin-left: 20%;
+    /* margin-right: 50%; */
+  }
+  .text{
+    flex-direction: row;
   }

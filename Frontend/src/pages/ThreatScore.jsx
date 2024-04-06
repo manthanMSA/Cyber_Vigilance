@@ -40,13 +40,19 @@ const ThreatScore = () => {
         enabled: false,
       },
     },
+    elements: {
+      arc: {
+        borderWidth: 25, // Increase the borderWidth to increase thickness
+        borderColor: ['rgba(255, 0, 0, 0.5)', 'rgba(0, 255, 0, 0.5)'], // Increase the borderWidth to increase thickness
+      },
+    },
   };
 
   const data = {
     datasets: [
       {
         data: [selectedScore || 0, 100 - (selectedScore || 0)],
-        backgroundColor: ['rgba(0, 255, 0, 0.5)', 'rgba(255, 0, 0, 0.5)'],
+        backgroundColor: ['rgba(255, 0, 0, 0.5)', 'rgba(0, 255, 0, 0.5)'],
       },
     ],
   };
@@ -57,24 +63,24 @@ const ThreatScore = () => {
 const getMessage = (score, sectorMessage) => {
   if (score < 50) {
     return (
-      <span>
-        Your organization's cybersecurity vulnerability score is relatively low. However, it's crucial to remain vigilant and implement robust cybersecurity measures to prevent potential cyberattacks.<br />
-        {sectorMessage}
-      </span>
+      <ul>
+       <li>Your organization's cybersecurity vulnerability score is relatively low. However, it's crucial to remain vigilant and implement robust cybersecurity measures to prevent potential cyberattacks.</li>   
+       <li>{sectorMessage}</li> 
+      </ul>
     );
   } else if (score >= 50 && score < 70) {
     return (
-      <span>
-        Your organization's cybersecurity vulnerability score indicates a moderate level of vulnerability. Consider enhancing your cybersecurity defenses by implementing additional security measures and conducting regular security assessments.<br />
-        {sectorMessage}
-      </span>
+      <ul>
+        <li>Your organization's cybersecurity vulnerability score indicates a moderate level of vulnerability. Consider enhancing your cybersecurity defenses by implementing additional security measures and conducting regular security assessments.</li>
+        <li>{sectorMessage}</li>
+      </ul>
     );
   } else {
     return (
-      <span>
-        Your organization's cybersecurity vulnerability score is high, indicating a significant risk of cyberattacks. It's imperative to prioritize cybersecurity measures, including advanced threat detection, incident response planning, and employee training, to mitigate potential threats effectively.<br />
-        {sectorMessage}
-      </span>
+      <ul>
+        <li>Your organization's cybersecurity vulnerability score is high, indicating a significant risk of cyberattacks. It's imperative to prioritize cybersecurity measures, including advanced threat detection, incident response planning, and employee training, to mitigate potential threats effectively.</li>
+        <li>{sectorMessage}</li>
+      </ul>
     );
   }
 };
@@ -83,7 +89,7 @@ const getMessage = (score, sectorMessage) => {
 
   return (
     <div className="threat-container">
-      <div className='threat-container'>
+      <div>
         <h2>Select Sector:</h2>
         <select value={selectedSector} onChange={handleSectorChange}>
           <option value="">Select Sector</option>
@@ -94,16 +100,22 @@ const getMessage = (score, sectorMessage) => {
           ))}
         </select>
         {selectedScore !== null && (
-          <div className='threat-container'>
-            <div style={{ width: '300px', height: '300px' }}>
+          <div>
+            <div className="doughnut" style={{ width: '300px', height: '300px' }}>
               <Doughnut data={data} options={options} />
-              <h3>Score: {selectedScore}</h3>
-              <p>{getMessage(selectedScore, sectorMessage)}</p> {/* Display message based on score and sector */}
+              <h2>Score: {selectedScore}</h2>
+              
             </div>
+            
+            
           </div>
         )}
       </div>
+      <div className='text'>
+            <p className='aligning'>{getMessage(selectedScore, sectorMessage)}</p> {/* Display message based on score and sector */}
+      </div>
     </div>
+    
   );
 };
 
