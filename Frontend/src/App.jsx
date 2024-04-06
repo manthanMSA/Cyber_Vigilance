@@ -12,6 +12,7 @@ import StaggeredDropDown from "./components/chatbot";
 import Dashboard1 from "./components/dashboard1";
 import Vulnerability from "./pages/Vulnerability";
 import { About } from "./pages/About";
+import ThreatScore from "./pages/ThreatScore";
 
 defaults.maintainAspectRatio = false;
 defaults.responsive = true;
@@ -47,20 +48,39 @@ export const App = () => {
     
 
     <Router>
-      <div>
+      {/* <div>
         <div class="topnav">
           <a class="active" href="/">HOME</a>
           <a href="/about">FORCASTING</a>
           <a href="/vulneribility">CHECK VULNERABILTIY</a>
-        </div>
+          <a href="/score">Threat Score</a>
+        </div> */}
+        <div>
+    <div class="topnav">
+      <Link to="/" class="active">HOME</Link>
+      <Link to="/about">FORCASTING</Link>
+      <Link to="/vulneribility">CHECK VULNERABILTIY</Link>
+      <Link to="/score">Threat Score</Link>
+    </div>
+  {/* </div> */}
 
-        <StaggeredDropDown/>
+        
+
+        {/* <StaggeredDropDown/> */}
         <Routes>
           <Route path="/" element={<Dashboard1 />} />
           <Route path="/about" element={<About />} />
           <Route path="/vulneribility" element={<Vulnerability />} />
+          <Route path="/score" element={<ThreatScore/>} />
         </Routes>
+
+        <div className="staggered-dropdown" style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+          <StaggeredDropDown/>
+        </div>
+
       </div>
     </Router>
   );
 };
+
+

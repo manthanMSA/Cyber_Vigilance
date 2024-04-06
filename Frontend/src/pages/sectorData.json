@@ -1,0 +1,195 @@
+{
+  "sectors": [
+    {
+      "sector": "Accommodation and food service",
+      "score": 62.78688525,
+      "message": "Implementing robust cybersecurity measures for online reservation systems, securing customer payment data, and training staff to recognize and prevent phishing attacks can significantly reduce the threat vulnerability score in the Accommodation and Food Service sector."
+    },
+    {
+      "sector": "Accommodation and food service activities",
+      "score": 61.48148148,
+      "message": "Implementing multi-factor authentication for employee access, regularly updating software to patch security vulnerabilities, and conducting regular cybersecurity training sessions can help mitigate cyber threats in Accommodation and Food Service Activities."
+    },
+    {
+      "sector": "Activities of extraterritorial organizations and bodies",
+      "score": 64,
+      "message": "Establishing a dedicated cybersecurity team, conducting regular risk assessments, and implementing encryption protocols for sensitive data exchanges can enhance cybersecurity resilience for Activities of Extraterritorial Organizations and Bodies."
+    },
+    {
+      "sector": "Administration and support service",
+      "score": 64.38709677,
+      "message": "Deploying intrusion detection systems, implementing strict access controls for administrative accounts, and regularly backing up critical data can mitigate cyber risks in the Administration and Support Service sector."
+    },
+    {
+      "sector": "Administrative and support service activities",
+      "score": 63.23529412,
+      "message": "Utilizing endpoint security solutions, enforcing strong password policies, and conducting periodic vulnerability assessments can strengthen cybersecurity posture for Administrative and Support Service Activities."
+    },
+    {
+      "sector": "Arts entertainment and recreation",
+      "score": 64,
+      "message": "Implementing firewalls to restrict unauthorized access, encrypting data both in transit and at rest, and conducting regular cybersecurity awareness training for employees can enhance cybersecurity resilience for the Arts, Entertainment, and Recreation sector."
+    },
+    {
+      "sector": "Arts entertainment, recreation",
+      "score": 66.875,
+      "message": "Implementing real-time threat monitoring systems, establishing incident response protocols, and conducting regular cybersecurity audits can help mitigate cyber threats in the Arts, Entertainment, and Recreation sector."
+    },
+    {
+      "sector": "Education",
+      "score": 66.55172414,
+      "message": "Securing student data through encryption, implementing web filtering solutions to block malicious websites, and regularly updating cybersecurity policies can enhance cybersecurity posture for the Education sector."
+    },
+    {
+      "sector": "Electricity gas steam and air conditioning supply",
+      "score": 75.29411765,
+      "message": "Implementing network segmentation to isolate critical infrastructure, conducting regular security assessments of SCADA systems, and implementing employee cybersecurity training programs can strengthen cybersecurity resilience for the Electricity, Gas, Steam, and Air Conditioning Supply sector."
+    },
+    {
+      "sector": "Electricity, gas steam, air conditioning",
+      "score": 69.09090909,
+      "message": "Deploying intrusion prevention systems to detect and mitigate cyber threats, implementing robust access controls for critical systems, and establishing incident response plans can enhance cybersecurity posture for the Electricity, Gas, Steam, and Air Conditioning sector."
+    },
+    {
+      "sector": "Extraterritorial orgs and bodies",
+      "score": 79.2,
+      "message": "Implementing continuous monitoring solutions to detect and respond to cyber threats in real-time, establishing a cybersecurity incident response team, and regularly conducting cybersecurity drills can enhance cybersecurity resilience for Extraterritorial Organizations and Bodies."
+    },
+    {
+      "sector": "Finance and insurance",
+      "score": 68.56088561,
+      "message": "Implementing multi-layered authentication mechanisms for financial transactions, conducting regular penetration testing exercises, and implementing data loss prevention solutions can help mitigate cyber threats in the Finance and Insurance sector."
+    },
+    {
+      "sector": "Financial and insurance activities",
+      "score": 67.5,
+      "message": "Utilizing blockchain technology for secure transactions, implementing real-time fraud detection systems, and conducting regular cybersecurity audits can enhance cybersecurity posture for Financial and Insurance Activities."
+    },
+    {
+      "sector": "Fintech",
+      "score": 67.4906367,
+      "message": "Implementing end-to-end encryption for financial transactions, leveraging artificial intelligence for anomaly detection, and establishing partnerships with cybersecurity firms can strengthen cybersecurity resilience for the Fintech sector."
+    },
+    {
+      "sector": "Human health and social work",
+      "score": 65.62300319,
+      "message": "Implementing secure telehealth platforms, conducting regular vulnerability assessments of medical devices, and providing comprehensive cybersecurity training for healthcare professionals can mitigate cyber risks in the Human Health and Social Work sector."
+    },
+    {
+      "sector": "Human health and social work activities",
+      "score": 68.76712329,
+      "message": "Securing electronic health records through encryption, implementing access controls for sensitive patient data, and regularly updating antivirus software can enhance cybersecurity posture for Human Health and Social Work Activities."
+    },
+    {
+      "sector": "Human health and social work activities ",
+      "score": 80,
+      "message": "Establishing incident response protocols for data breaches, conducting regular cybersecurity awareness training for healthcare staff, and implementing strict access controls for electronic health records can enhance cybersecurity resilience for Human Health and Social Work Activities."
+    },
+    {
+      "sector": "Individual",
+      "score": 75.31213192,
+      "message": "Implementing strong, unique passwords for online accounts, enabling two-factor authentication where available, and staying informed about common cyber threats can enhance cybersecurity for individuals."
+    },
+    {
+      "sector": "Information and Communication",
+      "score": 80,
+      "message": "Implementing encryption for sensitive data transmission, conducting regular security audits of networks and systems, and establishing incident response plans can enhance cybersecurity resilience for the Information and Communication sector."
+    },
+    {
+      "sector": "Information and communication",
+      "score": 66.90391459,
+      "message": "Utilizing secure communication protocols, implementing user access controls for data repositories, and conducting regular cybersecurity training for employees can mitigate cyber risks in the Information and Communication sector."
+    },
+    {
+      "sector": "Manufacturing",
+      "score": 69.12790698,
+      "message": "Securing IoT devices on the factory floor, implementing network segmentation to isolate production systems, and conducting regular cybersecurity assessments of industrial control systems can enhance cybersecurity posture for the Manufacturing sector."
+    },
+    {
+      "sector": "Mining and quarrying",
+      "score": 65.16129032,
+      "message": "Implementing intrusion detection systems for mine control networks, conducting regular cybersecurity training for mine personnel, and establishing secure remote access protocols can mitigate cyber risks in the Mining and Quarrying sector."
+    },
+    {
+      "sector": "Multiple Industries",
+      "score": 80.77205882,
+      "message": "Implementing a comprehensive cybersecurity framework such as NIST Cybersecurity Framework, conducting regular cybersecurity risk assessments, and establishing partnerships with cybersecurity service providers can enhance cybersecurity resilience for companies operating in Multiple Industries."
+    },
+    {
+      "sector": "Other service activities",
+      "score": 62.45614035,
+      "message": "Implementing data encryption for sensitive customer information, conducting regular cybersecurity awareness training for employees, and establishing incident response plans can mitigate cyber risks in Other Service Activities."
+    },
+    {
+      "sector": "Professional scientific and technical activities",
+      "score": 67.59689922,
+      "message": "Implementing endpoint detection and response solutions, conducting regular security audits of client-facing applications, and establishing secure file transfer protocols can enhance cybersecurity posture for Professional, Scientific, and Technical Activities."
+    },
+    {
+      "sector": "Professional, scientific and technical",
+      "score": 68.62416107,
+      "message": "Utilizing threat intelligence feeds to detect emerging cyber threats, implementing access controls for intellectual property, and conducting regular cybersecurity training for employees can mitigate cyber risks in the Professional, Scientific, and Technical sector."
+    },
+    {
+      "sector": "Public admin and defence, social security",
+      "score": 72.19638243,
+      "message": "Implementing multi-factor authentication for government systems, conducting regular cybersecurity training for government employees, and establishing secure communication channels can enhance cybersecurity resilience for Public Administration and Defence, Social Security."
+    },
+    {
+      "sector": "Public administration and defence, compulsory social security",
+      "score": 68.62944162,
+      "message": "Securing government networks through regular vulnerability assessments, establishing incident response teams for cyber incidents, and implementing access controls for sensitive government data can mitigate cyber risks in Public Administration and Defence, Compulsory Social Security."
+    },
+    {
+      "sector": "Real estate",
+      "score": 65.55555556,
+      "message": "Implementing email security solutions to prevent phishing attacks, conducting regular cybersecurity audits of property management software, and encrypting sensitive client data can enhance cybersecurity posture for the Real Estate sector."
+    },
+    {
+      "sector": "Real estate activities",
+      "score": 66.66666667,
+      "message": "Securing property listings databases through access controls, implementing secure online payment gateways for rental transactions, and conducting background checks on third-party vendors can mitigate cyber risks in Real Estate Activities."
+    },
+    {
+      "sector": "Transportation and storage",
+      "score": 65.75,
+      "message": "Implementing GPS tracking systems for cargo shipments, conducting regular cybersecurity training for logistics personnel, and establishing incident response protocols for cyber attacks on transportation networks can enhance cybersecurity resilience for the Transportation and Storage sector."
+    },
+    {
+      "sector": "Unknown",
+      "score": 73.49593496,
+      "message": "Conducting thorough cybersecurity risk assessments, implementing network intrusion detection systems, and establishing security incident response plans can mitigate cyber risks in sectors with unidentified vulnerabilities."
+    },
+    {
+      "sector": "Water supply, sewerage waste management, and remediation activities",
+      "score": 70,
+      "message": "Securing supervisory control and data acquisition (SCADA) systems, implementing access controls for water treatment facilities, and conducting regular cybersecurity audits of water supply networks can enhance cybersecurity posture for the Water Supply, Sewerage, Waste Management, and Remediation Activities sector."
+    },
+    {
+      "sector": "Water supply, waste mgmt, remediation",
+      "score": 66.04651163,
+      "message": "Implementing backup systems for water treatment plants, conducting cybersecurity training for utility workers, and establishing communication protocols for cyber incidents can mitigate cyber risks in Water Supply, Waste Management, and Remediation."
+    },
+    {
+      "sector": "Wholesale and retail",
+      "score": 64.97354497,
+      "message": "Securing online payment processing systems, implementing secure Wi-Fi networks for retail locations, and conducting regular vulnerability scans of e-commerce platforms can enhance cybersecurity posture for the Wholesale and Retail sector."
+    },
+    {
+      "sector": "Wholesale and retail trade",
+      "score": 60,
+      "message": "Implementing point-of-sale security measures, conducting employee training to recognize and report phishing attempts, and encrypting customer payment data can mitigate cyber risks in Wholesale and Retail Trade."
+    },
+    
+    {
+      "sector": "man health and social work",
+      "score": 40,
+      "message": "Securing patient health records through encryption, implementing access controls for medical devices, and establishing incident response protocols for healthcare cyber incidents can mitigate cyber risks in the Manufacturing, Health, and Social Work sector."
+    },
+    {
+      "sector": "Entertainment and recreation",
+      "score": 40,
+      "message": "Implementing endpoint security solutions for ticketing systems, conducting regular cybersecurity training for entertainment venue staff, and establishing incident response plans for cyber incidents can mitigate cyber risks in the Arts, Entertainment, and Recreation sector."
+    }
+  ]
+}
