@@ -53,11 +53,15 @@ const StaggeredDropDown = () => {
   return (
     <div className="flex items-center justify-center">
       <motion.div animate={isBotOpen ? "open" : "closed"} className="relative">
-        <motion.ul
+        <motion.div
+          style={{
+            background: "white",
+          }}
           initial={wrapperVariants.closed}
           variants={wrapperVariants}
-          style={{ originY: "bottom", translateX: "-50%" }}
-          className="flex flex-col gap-2 p-2 rounded-lg bg-white shadow-xl absolute bottom-[120%] left-[50%] w-[20rem] overflow-hidden"
+          // style={{ originY: "bottom", translateX: "-50%" }}
+
+          className=""
         >
           <div className="w-full h-full flex flex-col gap-2">
             <Option
@@ -74,7 +78,19 @@ const StaggeredDropDown = () => {
             />
             <Divider />
             <div className="h-[300px]">
-              <div className="flex flex-col gap-2 h-full overflow-y-auto">
+              <div
+                className="flex flex-col  h-full overflow-y-auto"
+                style={{
+                  maxWidth: "40vw",
+                  width: "40vw",
+                  background: "white",
+                  maxHeight: "40vh",
+                  overflowY: "scroll",
+                  padding: "24px",
+                  margin: "16px",
+                  gap: "100px",
+                }}
+              >
                 {msgList.map((msg, idx) => (
                   // <div key={idx} className={`flex bg-slate-100 items-center gap-2 max-w-[70%] break-words flex-wrap h-auto border-2 p-2 font-bold whitespace-nowrap rounded-md text-slate-700 ${msg.type === 'user' ? 'self-end' : 'self-start'}`}>
                   //     <span>{msg.msg}</span>
@@ -85,13 +101,17 @@ const StaggeredDropDown = () => {
                       msg.type === "user" ? "self-end" : "self-start"
                     } w-[70%]`}
                   >
-                    <div className="w-full text center border rounded-xl flex flex-col items-start justify-center p-2.5 break-words">
+                    <div className="w-full text center border rounded-xl flex flex-col items-start justify-center p-2.5 break-words bg-black ">
                       <div
-                        className={`${
+                        className={
                           msg.type === "user"
-                            ? "text-blue-700"
-                            : "text-slate-700"
-                        } font-bold text-xs`}
+                            ? "text-blue-700 font-bold text-xs"
+                            : "text-slate-700 font-bold text-xs"
+                        }
+                        style={{
+                          marginBottom: "4px",
+                          marginTop: "16px",
+                        }}
                       >
                         {msg.type === "user" ? "You" : "Chatbot"}
                       </div>
@@ -104,8 +124,22 @@ const StaggeredDropDown = () => {
                 ))}
               </div>
             </div>
-            <Divider />
-            <motion.li
+            <div
+              className=""
+              style={{
+                margin: "16px 0px",
+              }}
+            >
+              {" "}
+              <Divider />{" "}
+            </div>
+            <motion.div
+              style={{
+                display: "flex",
+                // margin: "0px 8px",
+                alignItems: "center",
+                background: "white",
+              }}
               variants={itemVariants}
               // onClick={() => setOpen(false)}
               className="flex items-center justify-between gap-2 w-full p-2 font-bold whitespace-nowrap rounded-md text-slate-700 "
@@ -116,6 +150,7 @@ const StaggeredDropDown = () => {
                 fullWidth
                 value={msg}
                 onChange={(e) => setMsg(e.target.value)}
+                //  on right side add send icon
               />
               <motion.span variants={actionIconVariants}>
                 <IconButton
@@ -131,23 +166,33 @@ const StaggeredDropDown = () => {
                   />
                 </IconButton>
               </motion.span>
-            </motion.li>
+            </motion.div>
           </div>
-        </motion.ul>
-        <button
-          onClick={toggleBot}
-          className="flex items-center gap-2 w-16 h-16 justify-center p-4 rounded-full text-indigo-50 bg-indigo-500 hover:bg-indigo-500 transition-colors"
+        </motion.div>
+        <div
+          style={{
+            minHeight: "10px",
+            minWidth: "100%",
+            // background: "black",
+            display: "flex",
+            justifyContent: "end",
+          }}
         >
-          <motion.span variants={iconVariants}>
-            {/* <SmartToyIcon /> */}
-            <RiRobot2Fill
-              style={{
-                fontSize: 30,
-                color: "white",
-              }}
-            />
-          </motion.span>
-        </button>
+          <button
+            onClick={toggleBot}
+            className="flex items-center gap-2 w-16 h-16 justify-center p-4 rounded-full text-indigo-50 bg-indigo-500 hover:bg-indigo-500 transition-colors"
+          >
+            <motion.span variants={iconVariants}>
+              {/* <SmartToyIcon /> */}
+              <RiRobot2Fill
+                style={{
+                  fontSize: 30,
+                  color: "white",
+                }}
+              />
+            </motion.span>
+          </button>
+        </div>
       </motion.div>
     </div>
   );
