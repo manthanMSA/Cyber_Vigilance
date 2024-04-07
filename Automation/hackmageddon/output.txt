@@ -1,0 +1,1821 @@
+2024-04-07 00:49:51 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: hackmageddon)
+2024-04-07 00:49:51 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.22621-SP0
+2024-04-07 00:49:51 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-07 00:49:51 [py.warnings] WARNING: C:\Python 31\lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-04-07 00:49:51 [scrapy.extensions.telnet] INFO: Telnet Password: 912e2a9cbbb81e16
+2024-04-07 00:49:53 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-07 00:49:53 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'hackmageddon',
+ 'LOG_LEVEL': 'INFO',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'hackmageddon.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['hackmageddon.spiders']}
+2024-04-07 00:49:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-07 00:49:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-07 00:49:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['hackmageddon.pipelines.ValidateItemPipeline',
+ 'hackmageddon.pipelines.WriteItemPipeline']
+2024-04-07 00:49:54 [scrapy.core.engine] INFO: Spider opened
+2024-04-07 00:49:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-07 00:49:54 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-07 00:49:58 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': ['Malware'],
+ 'Attack_class': ['CC'],
+ 'Author': ['?'],
+ 'Country': ['US'],
+ 'Description': ['Lake Regional Healthcare experiences a ransomware attack '
+                 'that disrupted its computer system.'],
+ 'Target': [],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': '2021',
+ 'dat': ['04/01/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['BitBucket'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['Source code of mobile apps and internal tools'],
+ 'Target_class': ['C Manufacturing'],
+ 'Year': '2021',
+ 'dat': ['4/1/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['IN'],
+ 'Target': ['35 million users'],
+ 'Target_class': ['K Financial and insurance activities'],
+ 'Year': '2020',
+ 'dat': ['18/8/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['UK'],
+ 'Target': ['1000s of personal documents including passports.'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': '2020',
+ 'dat': ['12/9/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['32 Gb (377,000 files)'],
+ 'Target_class': ['R Arts entertainment and recreation'],
+ 'Year': '2020',
+ 'dat': ['13/10/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['UK'],
+ 'Target': ['Sensitive documents of more than 12,000 construction workers'],
+ 'Target_class': ['N Administrative and support service activities'],
+ 'Year': 'During December 2020',
+ 'dat': ['During December 2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['1.9 million user records'],
+ 'Target_class': ['R Arts entertainment and recreation'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['2.8 million user records'],
+ 'Target_class': ['R Arts entertainment and recreation'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['RO'],
+ 'Target': ['201,087 files belonging to 200,000 people'],
+ 'Target_class': ['N Administrative and support service activities'],
+ 'Year': '2020',
+ 'dat': ['1/12/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['EU'],
+ 'Target': ['Images of hundreds of passports and identity documents belonging '
+            'to journalists and volleyball players from around the world.'],
+ 'Target_class': ['R Arts entertainment and recreation'],
+ 'Year': '2020',
+ 'dat': ['20/11/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['JM'],
+ 'Target': ['70,000 negative COVID-19 lab results, over 425,000 immigration '
+            'documents, and over 250,000 quarantine orders dating back to June '
+            '2020'],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': '2021',
+ 'dat': ['16/2/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['TR'],
+ 'Target': ['55,000 court papers regarding over 15,000 legal cases'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': '2020',
+ 'dat': ['30/9/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['NL'],
+ 'Target': ['1.9 million user records'],
+ 'Target_class': ['R Arts entertainment and recreation'],
+ 'Year': '2021',
+ 'dat': ['21/1/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['1.5 million user records'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': '2021',
+ 'dat': ['12/2/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['485GB containing more than 114.000 files belonging to '
+            '10,000-100,000 people'],
+ 'Target_class': ['N Administrative and support service activities'],
+ 'Year': '2020',
+ 'dat': ['24/12/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['207,524 images of roughly 52,000 patients’ photo ID scans'],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': '2021',
+ 'dat': ['22/02/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['Data of 65,403 patients'],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': '2020',
+ 'dat': ['14/12/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['4,361 files (103 GB)'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': '2020',
+ 'dat': ['24/12/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ["300,000 users' data (138 GB)"],
+ 'Target_class': ['R Arts entertainment and recreation'],
+ 'Year': 'During 2020',
+ 'dat': ['During 2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['Customer Data'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': 'During December 2020',
+ 'dat': ['During December 2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['IN'],
+ 'Target': ['100M users (8.2 TB)'],
+ 'Target_class': ['K Financial and insurance activities'],
+ 'Year': 'During February 2021',
+ 'dat': ['During February 2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['2,000 CSV and TXT files, each with hundreds or thousands of '
+            'entries related to patients’ medical records'],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': '2021',
+ 'dat': ['01/03/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['GitHub'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['Multiple PHI records'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': 'Since at least December 2020',
+ 'dat': ['Since at least December 2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['N/A'],
+ 'Country': [],
+ 'Description': ['JO'],
+ 'Target': ['Private information of thousands of student'],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['IN'],
+ 'Target': ['Sensitive information of approximately 2.5 million'],
+ 'Target_class': ['K Financial and insurance activities'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['Customer Backups'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': '2021',
+ 'dat': ['23/02/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['Tens of thousands of customer orders'],
+ 'Target_class': ['I Accommodation and food service activities'],
+ 'Year': 'During January 2021',
+ 'dat': ['During January 2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['IN'],
+ 'Target': ['2,532,610 files were exposed, equating to 643GB of data'],
+ 'Target_class': ['N Administrative and support service activities'],
+ 'Year': 'Late December 2020',
+ 'dat': ['Late December 2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['N/A'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['Personal information of 11,000 Eversource customers'],
+ 'Target_class': ['D Electricity gas steam and air conditioning supply'],
+ 'Year': '2021',
+ 'dat': ['16/03/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['3,800 files'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': '2021',
+ 'dat': ['07/01/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['GitHub'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['164,021 Wyoming residents'],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': '2021',
+ 'dat': ['10/03/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['290 Mb of data belonging to 70,000 users'],
+ 'Target_class': ['R Arts entertainment and recreation'],
+ 'Year': '2021',
+ 'dat': ['04/02/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['GitHub'],
+ 'Country': [],
+ 'Description': ['UK'],
+ 'Target': ['Usernames, hashed passwords, email addresses, and API keys.'],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': 'Late February 2021',
+ 'dat': ['Late February 2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['UK'],
+ 'Target': ['5 GB of data with 21,000 files'],
+ 'Target_class': ['N Administrative and support service activities'],
+ 'Year': '2020',
+ 'dat': ['29/12/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['name, address, SSN, identification number, DOB, and health '
+            'insurance information of 3,253,822 health plan members'],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': '2021',
+ 'dat': ['11/01/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['3.3 million customers'],
+ 'Target_class': ['C Manufacturing'],
+ 'Year': '2021',
+ 'dat': ['12/06/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['TR'],
+ 'Target': ['20GB with 9500 containing personal information of 567,000 unique '
+            'users'],
+ 'Target_class': ['G Wholesale and retail trade'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['GitLab'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['Multiple projects, including secret keys and passwords'],
+ 'Target_class': ['O Public administration and defence, compulsory social '
+                  'security'],
+ 'Year': '2021',
+ 'dat': ['24/06/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['N/A'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['1.6 million customer records'],
+ 'Target_class': ['C Manufacturing'],
+ 'Year': '2021',
+ 'dat': ['11/06/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['200,000 files in 421GB of data related to over 7000 artists,'],
+ 'Target_class': ['R Arts entertainment and recreation'],
+ 'Year': '2021',
+ 'dat': ['25/05/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['711,000 files'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': 'Early June 2021',
+ 'dat': ['Early June 2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Google Drive'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['705 people'],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': '2021',
+ 'dat': ['14/05/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['Over 80 misconfigured AWS S3 buckets totalling over 1000 GB of '
+            'data and over 1.6M files'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['NL'],
+ 'Target': ['18GB of data containing details of 246,000 customers'],
+ 'Target_class': ['G Wholesale and retail trade'],
+ 'Year': '2021',
+ 'dat': ['10/03/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['1,400 profile photos and the details of approximately 306,000 '
+            'customers'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['35 million US residents’ personal details exposed'],
+ 'Target_class': ['Z Unknown'],
+ 'Year': '2021',
+ 'dat': ['26/06/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['34 GB of data with 126 million records'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': '2021',
+ 'dat': ['10/04/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Google Drive'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['3,000 New York City public school students and 100 education '
+            'department staff members'],
+ 'Target_class': ['P Education'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['182 GB of data with 3 million records'],
+ 'Target_class': ['S Other Service Activities'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Salesforce'],
+ 'Country': [],
+ 'Description': ['>1'],
+ 'Target': ['Sensitive information about companies, their operations, clients, '
+            'and partners.'],
+ 'Target_class': ['Y Multiple Industries'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Google Drive'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['Teachers’ social security numbers, student academic records, and '
+            'families’ home addresses'],
+ 'Target_class': ['P Education'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Power Apps'],
+ 'Country': [],
+ 'Description': ['>1'],
+ 'Target': ['38 million data records'],
+ 'Target_class': ['Y Multiple Industries'],
+ 'Year': '2021',
+ 'dat': ['24/05/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['>1'],
+ 'Target': ['-'],
+ 'Target_class': ['Y Multiple Industries'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Google Cloud Platform'],
+ 'Country': [],
+ 'Description': ['ID'],
+ 'Target': ['About 1.3 million people personal data, including COVID-19 test '
+            'results and more'],
+ 'Target_class': ['Q Human health and social work activities'],
+ 'Year': '2021',
+ 'dat': ['15/07/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['Microsoft Azure'],
+ 'Country': [],
+ 'Description': ['>1'],
+ 'Target': ['Thousands of personal records'],
+ 'Target_class': ['S Other Service Activities'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['CO'],
+ 'Target': ['1.12TB of data, containing over 5.5 million documents'],
+ 'Target_class': ['L Real Estate Acitivities'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['A PostgreSQL database witth 6GB of data'],
+ 'Target_class': ['N Administrative and support service activities'],
+ 'Year': '2020',
+ 'dat': ['20/10/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['A 36GB backup file with 228,000 unique email addresses and other '
+            'PII'],
+ 'Target_class': ['N Administrative and support service activities'],
+ 'Year': '2020',
+ 'dat': ['13/10/2020']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['157GB of data, with nearly 200,000 files belonging to 27,000 – '
+            '50,000 individuals'],
+ 'Target_class': ['P Education'],
+ 'Year': '2021',
+ 'dat': ['04/09/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['BR'],
+ 'Target': ['226,000 files, including personal information from approximately '
+            '2.5 million individuals'],
+ 'Target_class': ['M Professional scientific and technical activities'],
+ 'Year': '2021',
+ 'dat': ['02/09/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['GitHub'],
+ 'Country': [],
+ 'Description': ['JP'],
+ 'Target': ["Around 133,000 users' payment details"],
+ 'Target_class': ['K Financial and insurance activities'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['DE'],
+ 'Target': ['55GB of information on over 28,000 Sennheiser customers'],
+ 'Target_class': ['C Manufacturing'],
+ 'Year': '2021',
+ 'dat': ['26/10/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['US'],
+ 'Target': ['100 GB worth of data cotaining 2.5 million files'],
+ 'Target_class': ['N Administrative and support service activities'],
+ 'Year': '2021',
+ 'dat': ['12/11/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['GH'],
+ 'Target': ['55GB of data with 3.8 million files of 700,000 citizens'],
+ 'Target_class': ['O Public administration and defence, compulsory social '
+                  'security'],
+ 'Year': '2021',
+ 'dat': ['29/09/2021']}
+2024-04-07 00:50:02 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': ['AWS S3'],
+ 'Country': [],
+ 'Description': ['UK'],
+ 'Target': ['-'],
+ 'Target_class': ['R Arts entertainment and recreation'],
+ 'Year': '-',
+ 'dat': ['-']}
+2024-04-07 00:50:07 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:07 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:07 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:07 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:07 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:07 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:18 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:50:18 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:50:18 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:50:18 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:50:18 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:50:18 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:50:22 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': ['Account Takeover'],
+ 'Attack_class': ['CC'],
+ 'Author': [],
+ 'Country': ['>1'],
+ 'Description': ['Multiple users of Nifty Gateway, a marketplace for buying '
+                 'and selling non-fungible tokens (NFTs), report that their '
+                 'accounts had been hacked and then drained of thousands of '
+                 'dollars worth of digital art.'],
+ 'Target': ['Nifty Gateway'],
+ 'Target_class': ['R Arts entertainment and recreation'],
+ 'Year': '2021',
+ 'dat': ['15/03/2021']}
+2024-04-07 00:50:27 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:27 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:27 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:27 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:27 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:27 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:29 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2020',
+ 'dat': []}
+2024-04-07 00:50:29 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2020',
+ 'dat': []}
+2024-04-07 00:50:29 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2020',
+ 'dat': []}
+2024-04-07 00:50:29 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2020',
+ 'dat': []}
+2024-04-07 00:50:29 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2020',
+ 'dat': []}
+2024-04-07 00:50:29 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2020',
+ 'dat': []}
+2024-04-07 00:50:29 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2020',
+ 'dat': []}
+2024-04-07 00:50:29 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2020',
+ 'dat': []}
+2024-04-07 00:50:37 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:37 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:37 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:37 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:37 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:37 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:45 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:45 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:45 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:45 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:45 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:45 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:52 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:52 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:52 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:52 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:52 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:52 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:53 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:53 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:53 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:53 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:53 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:53 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:53 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:53 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:54 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 23 pages/min), scraped 1424 items (at 1424 items/min)
+2024-04-07 00:50:57 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:57 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:57 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:57 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:57 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:50:57 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:08 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:08 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:08 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:08 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:08 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:08 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:16 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:16 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:16 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:16 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:16 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:16 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:17 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:17 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:17 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:17 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:17 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:17 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:17 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:17 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:17 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:26 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:26 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:26 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:26 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:26 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:26 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:34 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:34 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:34 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:34 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:34 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:34 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:41 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:51:41 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:51:41 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:51:41 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:51:41 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:51:41 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': 'Cyber Attacks',
+ 'dat': []}
+2024-04-07 00:51:42 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:42 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:42 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:42 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:42 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:42 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:42 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:42 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:42 [scrapy.core.scraper] WARNING: Dropped: Missing values!
+{'Attack': [],
+ 'Attack_class': [],
+ 'Author': [],
+ 'Country': [],
+ 'Description': [],
+ 'Target': [],
+ 'Target_class': [],
+ 'Year': '2021',
+ 'dat': []}
+2024-04-07 00:51:44 [scrapy.core.engine] INFO: Closing spider (Reached target URL. Stopping crawl.)
+2024-04-07 00:51:44 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 31904,
+ 'downloader/request_count': 44,
+ 'downloader/request_method_count/GET': 44,
+ 'downloader/response_bytes': 2328190,
+ 'downloader/response_count': 44,
+ 'downloader/response_status_count/200': 44,
+ 'dupefilter/filtered': 21,
+ 'elapsed_time_seconds': 110.003234,
+ 'finish_reason': 'Reached target URL. Stopping crawl.',
+ 'finish_time': datetime.datetime(2024, 4, 6, 19, 21, 44, 245248, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 12240996,
+ 'httpcompression/response_count': 44,
+ 'item_dropped_count': 172,
+ 'item_dropped_reasons_count/DropItem': 172,
+ 'item_scraped_count': 2510,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 173,
+ 'request_depth_max': 42,
+ 'response_received_count': 44,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 43,
+ 'scheduler/dequeued/memory': 43,
+ 'scheduler/enqueued': 43,
+ 'scheduler/enqueued/memory': 43,
+ 'start_time': datetime.datetime(2024, 4, 6, 19, 19, 54, 242014, tzinfo=datetime.timezone.utc)}
+2024-04-07 00:51:44 [scrapy.core.engine] INFO: Spider closed (Reached target URL. Stopping crawl.)
