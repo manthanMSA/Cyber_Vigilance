@@ -42,12 +42,9 @@ export const App = () => {
           <Route path="/" element={<Dashboard1 />} />
           <Route path="/about" element={<About />} />
           <Route path="/vulneribility" element={<Vulnerability />} />
-<<<<<<< HEAD
-          <Route path="/score" element={<ThreatScore/>} />
+          {/* <Route path="/score" element={<ThreatScore/>} /> */}
           <Route path="/sector" element={<Sector/>}/>
-=======
           <Route path="/score" element={<ThreatScore />} />
->>>>>>> e93e37af35236aa167148a54fa255191403e69f0
         </Routes>
 
         <div
