@@ -63,21 +63,21 @@ const ThreatScore = () => {
 const getMessage = (score, sectorMessage) => {
   if (score < 50) {
     return (
-      <ul>
-       <li>Your organization's cybersecurity vulnerability score is relatively low. However, it's crucial to remain vigilant and implement robust cybersecurity measures to prevent potential cyberattacks.</li>   
+      <ul className='alignleft display'>
+       <li>Your organization's cybersecurity vulnerability score is relatively low. However, it's crucial to remain vigilant and implement robust cybersecurity measures to prevent potential cyberattacks.</li> 
        <li>{sectorMessage}</li> 
       </ul>
     );
   } else if (score >= 50 && score < 70) {
     return (
-      <ul>
+      <ul className='alignleft display'>
         <li>Your organization's cybersecurity vulnerability score indicates a moderate level of vulnerability. Consider enhancing your cybersecurity defenses by implementing additional security measures and conducting regular security assessments.</li>
         <li>{sectorMessage}</li>
       </ul>
     );
   } else {
     return (
-      <ul>
+      <ul className='alignleft display'>
         <li>Your organization's cybersecurity vulnerability score is high, indicating a significant risk of cyberattacks. It's imperative to prioritize cybersecurity measures, including advanced threat detection, incident response planning, and employee training, to mitigate potential threats effectively.</li>
         <li>{sectorMessage}</li>
       </ul>
@@ -102,7 +102,7 @@ const getMessage = (score, sectorMessage) => {
         {selectedScore !== null && (
           <div>
             <div className="doughnut" style={{ width: '300px', height: '300px' }}>
-              <Doughnut data={data} options={options} />
+              <Doughnut className='display' data={data} options={options} />
               <h2>Score: {selectedScore}</h2>
               
             </div>
@@ -111,8 +111,8 @@ const getMessage = (score, sectorMessage) => {
           </div>
         )}
       </div>
-      <div className='text'>
-            <p className='aligning'>{getMessage(selectedScore, sectorMessage)}</p> {/* Display message based on score and sector */}
+      <div className='text '>
+            <p className='aligning '>{getMessage(selectedScore, sectorMessage)}</p> {/* Display message based on score and sector */}
       </div>
     </div>
     
