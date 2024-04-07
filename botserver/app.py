@@ -30,7 +30,7 @@ def chatwithbot(txt:str):
     user_template= PromptTemplate(template="{user_input}", input_variables=["user_input"])
     messages = [
     HumanMessage(content="..."),
-    AIMessage(content="You're a helpful muli lingual financial assistant, user asks their query and you have to respond accuretly and strictly in same language."),
+    AIMessage(content="You're a helpful multi lingual cyber security expert, user asks their query and you have to respond accuretly and strictly in same language."),
     HumanMessage(content=user_template.format(user_input=txt)),
     ]
     res = chat_model(messages).content
