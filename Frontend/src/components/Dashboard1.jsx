@@ -30,7 +30,7 @@ function Dashboard1() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('finall.csv');
+      const response = await fetch('new_final.csv');
       const text = await response.text();
       const result = Papa.parse(text, { header: true });
       setData(result.data);

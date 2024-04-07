@@ -9,10 +9,11 @@ import "./App.css";
 // import chartData from "/src/data/Advanced persistent_data_1.json";
 import StaggeredDropDown from "./components/chatbot";
 // import chartData2 from "/src/data/Backdoor_data_1.json";
-import Dashboard1 from "./components/dashboard1";
+import Dashboard1 from "./components/Dashboard1.jsx";
 import Vulnerability from "./pages/Vulnerability";
 import { About } from "./pages/About";
 import ThreatScore from "./pages/ThreatScore";
+import Sector from "./pages/Sector.jsx";
 
 defaults.maintainAspectRatio = false;
 defaults.responsive = true;
@@ -41,6 +42,8 @@ export const App = () => {
           <Route path="/" element={<Dashboard1 />} />
           <Route path="/about" element={<About />} />
           <Route path="/vulneribility" element={<Vulnerability />} />
+          {/* <Route path="/score" element={<ThreatScore/>} /> */}
+          <Route path="/sector" element={<Sector/>}/>
           <Route path="/score" element={<ThreatScore />} />
         </Routes>
 

@@ -1,14 +1,14 @@
 
 
   .threat-container {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: top;
-    height: 300vh;
-    background-color: #ccc;
+    /* height: 300vh; */
+    /* background-color: #fff; */
     /* width: 70%; */
-    margin-left: 150px;
-    margin-right: 150px;
+    /* margin-left: 150px; */
+    /* margin-right: 150px; */
   }
   
   .threat-container > div {
@@ -63,8 +63,27 @@
 
   .doughnut{
     margin-left: 20%;
+    float: left;
     /* margin-right: 50%; */
   }
   .text{
-    flex-direction: row;
+    /* flex-direction: row; */
+    width: 45%;
+    float: right;
+    margin-top: 115px; 
+    margin-right: 200px;
+  }
+
+  .alignleft{
+    text-align: left;
+    clear: both;
+    display: block;
+  }
+
+  .display{
+    /* display: flex; */
+    width: 500px;
+    float: right;
+    display: block;
+    /* margin-right: 15px; */
   }
