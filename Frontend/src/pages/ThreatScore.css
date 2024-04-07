@@ -4,6 +4,7 @@
     /* display: flex; */
     justify-content: center;
     align-items: top;
+    margin-top: 40px;
     /* height: 300vh; */
     /* background-color: #fff; */
     /* width: 70%; */
@@ -86,4 +87,8 @@
     float: right;
     display: block;
     /* margin-right: 15px; */
+  }
+
+  .spacing{
+    margin-top: 20px;
   }

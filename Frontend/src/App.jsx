@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Chart as ChartJS, defaults } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
+import { MDBFooter } from 'mdb-react-ui-kit';
 // import StaggeredDropDown from '/src/components/chatbot.jsx';
 
 import "./App.css";
@@ -54,6 +55,18 @@ export const App = () => {
           <StaggeredDropDown />
         </div>
       </div>
+
+      {/* <MDBFooter bgColor='light' className='text-center text-lg-left'>
+      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        &copy; {new Date().getFullYear()} Copyright:{' '}
+        <a className='text-dark' href='https://mdbootstrap.com/'>
+          MDBootstrap.com
+        </a>
+      </div>
+    </MDBFooter> */}
+
     </Router>
+
+    
   );
 };

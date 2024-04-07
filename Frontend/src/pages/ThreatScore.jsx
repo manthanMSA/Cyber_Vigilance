@@ -11,12 +11,13 @@ ChartJS.register(
 );
 
 const ThreatScore = () => {
-  const [selectedSector, setSelectedSector] = useState('');
-  const [selectedScore, setSelectedScore] = useState(null);
-  const [sectorMessage, setSectorMessage] = useState('');
+  const [selectedSector, setSelectedSector] = useState('Education');
+  const [selectedScore, setSelectedScore] = useState(66.55172414);
+  const [sectorMessage, setSectorMessage] = useState('Securing student data through encryption, implementing web filtering solutions to block malicious websites, and regularly updating cybersecurity policies can enhance cybersecurity posture for the Education sector.');
 
   const handleSectorChange = (event) => {
     const sector = event.target.value;
+    console.log(sector);
     setSelectedSector(sector);
     const sectorData = sectorsData.sectors.find((item) => item.sector === sector);
     if (sectorData) {
@@ -75,14 +76,14 @@ const getMessage = (score, sectorMessage) => {
         <li>{sectorMessage}</li>
       </ul>
     );
-  } else {
+  } else{
     return (
       <ul className='alignleft display'>
         <li>Your organization's cybersecurity vulnerability score is high, indicating a significant risk of cyberattacks. It's imperative to prioritize cybersecurity measures, including advanced threat detection, incident response planning, and employee training, to mitigate potential threats effectively.</li>
         <li>{sectorMessage}</li>
       </ul>
     );
-  }
+  } 
 };
 
 
@@ -90,7 +91,7 @@ const getMessage = (score, sectorMessage) => {
   return (
     <div className="threat-container">
       <div>
-        <h2>Select Sector:</h2>
+        <h2 className='spacing'>Select Sector:</h2>
         <select value={selectedSector} onChange={handleSectorChange}>
           <option value="">Select Sector</option>
           {sectorsData.sectors.map((sector, index) => (

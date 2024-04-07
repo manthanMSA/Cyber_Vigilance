@@ -35,7 +35,7 @@ defaults.plugins.title.font.size = 20;
 defaults.plugins.title.color = "black";
 
 export const About = () => {
-  const [selectedDataType, setSelectedDataType] = useState("AdwareData");
+  const [selectedDataType, setSelectedDataType] = useState("Adware");
 
   const dataTypes = {
     Adware: { data: Adware, description: "Adware is software that automatically displays or downloads advertising material (often unwanted) when a user is online.", mitigation: "Install ad-blocking software, keep antivirus software up to date, be cautious of downloading free software from untrusted sources." },
@@ -74,6 +74,8 @@ export const About = () => {
     <div className="about-container">
       <div className="About">
         <div className="filterContainer">
+          <h2>Forcasting Bayes LSTM</h2>
+          <br></br>
           <label htmlFor="dataType">Filter by Attack Type:</label>
           <select id="dataType" value={selectedDataType} onChange={handleDataTypeChange}>
             {Object.keys(dataTypes).map((dataType) => (
@@ -128,7 +130,7 @@ export const About = () => {
         </div>
         
       </div>
-      <div>
+      <div className='bigcontainer'>
         {dataTypes[selectedDataType] && dataTypes[selectedDataType].data && dataTypes[selectedDataType].data.data && dataTypes[selectedDataType].data.options ? (
             <> 
                 <p>Description: {dataTypes[selectedDataType].description}</p>

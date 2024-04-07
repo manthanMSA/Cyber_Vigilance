@@ -65,6 +65,8 @@ const Sector = () => {
   return (
     <div className="about-container">
       <div className="About">
+      <h2>Forecasting by Smoothing SVM</h2>
+      <br></br>
         <div className="filterContainer">
           <label htmlFor="dataType">Filter by Attack Type:</label>
           <select id="dataType" value={selectedDataType} onChange={handleDataTypeChange}>
@@ -124,7 +126,7 @@ const Sector = () => {
         {dataTypes[selectedDataType] && dataTypes[selectedDataType].data && dataTypes[selectedDataType].data.data && dataTypes[selectedDataType].data.options ? (
             <> 
 
- */}
+ 
             </>
         ):(
           <p>No data available for the selected data type.</p>

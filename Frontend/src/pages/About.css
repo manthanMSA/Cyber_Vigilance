@@ -55,3 +55,17 @@
     height: 500px; /* Increase the height of the graph */
     margin: 0 auto;
   }
+
+  .bigcontainer{
+        /* display: flex; */
+        justify-content: center;
+        align-items: top;
+        margin-top: 40px;
+        padding: 30px 30px 30px 30px;
+        border-radius: 25%;
+        /* height: 300vh; */
+        background-color: #C4D8DE;
+        /* width: 70%; */
+        /* margin-left: 150px; */
+        /* margin-right: 150px; */
+  }
