@@ -139,3 +139,13 @@
 .styling{
   margin-top: 25px;
 }
+
+.text-center{
+  text-align: center;
+  background-color: #001F3E;
+  padding: 15px 15px 15px 15px;
+}
+
+.text-dark{
+  color: #ffffff;
+}

@@ -89,8 +89,7 @@ function Dashboard1() {
 
     <div className='container'>
       <div>
-        <iframe title="Barclays" width="541" height="600" src="https://app.powerbi.com/reportEmbed?reportId=ab41845d-b7ad-4f5e-813b-6332895832a1&autoAuth=true&ctid=0e6a03b4-28b9-4d7f-ac3c-38163cd83600" frameborder="0" allowFullScreen="true"></iframe>
-      </div>
+      <iframe title="Barclays" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=ab41845d-b7ad-4f5e-813b-6332895832a1&autoAuth=true&ctid=0e6a03b4-28b9-4d7f-ac3c-38163cd83600" frameborder="0" allowFullScreen="true"></iframe>      </div>
 
       {/* <h1>Cybersecurity Incident Dashboard</h1> */}
       <div className='filters'>
