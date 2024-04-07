@@ -119,11 +119,11 @@ function Dashboard1() {
       <div className="chart-section">
         <div className="chart-container">
           <h2 className="chart-section h2">Attack Type Distribution</h2>
-          <Plot data={chartData} layout={chartLayout} />
+          <Plot className="chart-section2 chart-section21" data={chartData} layout={chartLayout} />
         </div>
         <div className="chart-container">
           <h2 className="chart-section h2">Country-wise Incident Count</h2>
-          <Plot data={countryIncidentChartData} layout={chartLayout} />
+          <Plot className="chart-section2 chart-section22" data={countryIncidentChartData} layout={chartLayout} />
         </div>
       </div>
 
