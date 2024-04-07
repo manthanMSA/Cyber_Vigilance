@@ -12,9 +12,19 @@ import DnsSpoofing from "../data/DNS Spoofing_data_1.json";
 import Keylogger from "../data/Keylogger_data_1.json";
 import Malware from "../data/Malvertising_data_1.json";
 import PasswordAttack from "../data/Password Attack_data_1.json";
+import Pharming from "../data/Pharming_data_1.json";
 import Phishing from "../data/Phishing_data_1.json";
+import Rootkit from "../data/Rootkit_data_1.json";
+import Drive from "../data/Drive.json";
+import Spyware from "../data/Spyware_data_1.json";
 import SqlInjection from "../data/SQL Injection_data_1.json";
+import TargetedAttack from "../data/Targeted Attack_data_1.json";
+import Trojan from "../data/Trojan_data_1.json";
+import Sector from "./Sector";
+
 import "./About.css";
+// import data from '../../src/sector_graph/sector.json';
+
 
 
 defaults.maintainAspectRatio = false;
@@ -37,14 +47,28 @@ export const About = () => {
     DnsSpoofing: { data: DnsSpoofing, description: "DNS spoofing is a type of cyber attack that exploits the Domain Name System (DNS) to redirect web traffic to malicious sites.", mitigation: "Implement DNSSEC to authenticate DNS responses, use DNS filtering services, keep software updated." },
     Keylogger: { data: Keylogger, description: "A keylogger is a type of surveillance software that records every keystroke made by a computer user, especially in order to gain fraudulent access to passwords and other confidential information.", mitigation: "Use antivirus software, regularly scan for malware, be cautious of downloading files from untrusted sources." },
     Malware: { data: Malware, description: "Malware is any software intentionally designed to cause damage to a computer, server, client, or computer network.", mitigation: "Use antivirus software, keep software updated, avoid clicking on suspicious links or downloading files from untrusted sources." },
-    PasswordAttack: { data: PasswordAttack, description: "A password attack is a technique used to gain unauthorized access to a system or account by cracking passwords.", mitigation: "Use strong, unique passwords, implement multi-factor authentication, regularly change passwords." },
+    PasswordAttack: { data: Pharming, description: "A password attack is a technique used to gain unauthorized access to a system or account by cracking passwords.", mitigation: "Use strong, unique passwords, implement multi-factor authentication, regularly change passwords." },
+    Pharming: { data: PasswordAttack, description: "A password attack is a technique used to gain unauthorized access to a system or account by cracking passwords.", mitigation: "Use strong, unique passwords, implement multi-factor authentication, regularly change passwords." },
     Phishing: { data: Phishing, description: "Phishing is a cyber attack that uses disguised email as a weapon.", mitigation: "Educate users about phishing techniques, use spam filters, verify the identity of the sender before clicking on links or downloading attachments." },
+    Rootkit: { data: Rootkit, description: "Phishing is a cyber attack that uses disguised email as a weapon.", mitigation: "Educate users about phishing techniques, use spam filters, verify the identity of the sender before clicking on links or downloading attachments." },
+    Drive: { data: Drive, description: "Phishing is a cyber attack that uses disguised email as a weapon.", mitigation: "Educate users about phishing techniques, use spam filters, verify the identity of the sender before clicking on links or downloading attachments." },
+    Spyware: { data: Spyware, description: "Phishing is a cyber attack that uses disguised email as a weapon.", mitigation: "Educate users about phishing techniques, use spam filters, verify the identity of the sender before clicking on links or downloading attachments." },
     SqlInjection: { data: SqlInjection, description: "SQL injection is a code injection technique used to attack data-driven applications, where malicious SQL statements are inserted into an entry field for execution.", mitigation: "Use parameterized queries or prepared statements, validate and sanitize input data, limit database permissions." },
+    TargetedAttack: { data: TargetedAttack, description: "SQL injection is a code injection technique used to attack data-driven applications, where malicious SQL statements are inserted into an entry field for execution.", mitigation: "Use parameterized queries or prepared statements, validate and sanitize input data, limit database permissions." },
+    Trojan: { data: Trojan, description: "SQL injection is a code injection technique used to attack data-driven applications, where malicious SQL statements are inserted into an entry field for execution.", mitigation: "Use parameterized queries or prepared statements, validate and sanitize input data, limit database permissions." },
   };
 
   const handleDataTypeChange = (event) => {
     setSelectedDataType(event.target.value);
   };
+
+
+
+
+
+  
+
+ 
 
   return (
     <div className="about-container">
@@ -103,9 +127,7 @@ export const About = () => {
           )}
         </div>
         
-        <div></div>
       </div>
-      <div>\n</div>
       <div>
         {dataTypes[selectedDataType] && dataTypes[selectedDataType].data && dataTypes[selectedDataType].data.data && dataTypes[selectedDataType].data.options ? (
             <> 
@@ -116,6 +138,8 @@ export const About = () => {
           <p>No data available for the selected data type.</p>
         )}
         </div>
+        <Sector/>
     </div>
+    
   );
 };
