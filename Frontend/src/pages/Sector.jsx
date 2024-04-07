@@ -51,7 +51,6 @@ const Sector = () => {
     Professional_Scientific_and_Technical_Services: {data: Professional_Scientific_and_Technical_Services, description: "Adware is software that automatically displays or downloads advertising material (often unwanted) when a user is online.", mitigation: "Install ad-blocking software, keep antivirus software up to date, be cautious of downloading free software from untrusted sources."},
     Public_Admin: {data: Public_Admin, description: "Adware is software that automatically displays or downloads advertising material (often unwanted) when a user is online.", mitigation: "Install ad-blocking software, keep antivirus software up to date, be cautious of downloading free software from untrusted sources."},
     Real_Estate: {data: Real_Estate, description: "Adware is software that automatically displays or downloads advertising material (often unwanted) when a user is online.", mitigation: "Install ad-blocking software, keep antivirus software up to date, be cautious of downloading free software from untrusted sources."},
-    Public_Admin: {data: Professional_Scientific_and_Technical_Services, description: "Adware is software that automatically displays or downloads advertising material (often unwanted) when a user is online.", mitigation: "Install ad-blocking software, keep antivirus software up to date, be cautious of downloading free software from untrusted sources."},
     Transportation_Storage: {data: Transportation_Storage, description: "Adware is software that automatically displays or downloads advertising material (often unwanted) when a user is online.", mitigation: "Install ad-blocking software, keep antivirus software up to date, be cautious of downloading free software from untrusted sources."},
     Unknown: {data: Unknown, description: "Adware is software that automatically displays or downloads advertising material (often unwanted) when a user is online.", mitigation: "Install ad-blocking software, keep antivirus software up to date, be cautious of downloading free software from untrusted sources."},
     Utilities: {data: Utilities, description: "Adware is software that automatically displays or downloads advertising material (often unwanted) when a user is online.", mitigation: "Install ad-blocking software, keep antivirus software up to date, be cautious of downloading free software from untrusted sources."},
@@ -65,8 +64,6 @@ const Sector = () => {
   return (
     <div className="about-container">
       <div className="About">
-      <h2>Forecasting by Smoothing SVM</h2>
-      <br></br>
         <div className="filterContainer">
           <label htmlFor="dataType">Filter by Attack Type:</label>
           <select id="dataType" value={selectedDataType} onChange={handleDataTypeChange}>
@@ -126,7 +123,7 @@ const Sector = () => {
         {dataTypes[selectedDataType] && dataTypes[selectedDataType].data && dataTypes[selectedDataType].data.data && dataTypes[selectedDataType].data.options ? (
             <> 
 
- 
+ */}
             </>
         ):(
           <p>No data available for the selected data type.</p>
