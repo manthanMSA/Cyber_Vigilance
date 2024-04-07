@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 CORS(app)
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
 llm = HuggingFaceHub(
     repo_id="mistralai/Mixtral-8x7B-Instruct-v0.1",
