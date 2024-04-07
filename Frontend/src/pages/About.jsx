@@ -35,7 +35,7 @@ defaults.plugins.title.font.size = 20;
 defaults.plugins.title.color = "black";
 
 export const About = () => {
-  const [selectedDataType, setSelectedDataType] = useState("Adware");
+  const [selectedDataType, setSelectedDataType] = useState("Rootkit");
 
   const dataTypes = {
     Adware: { data: Adware, description: "Adware is software that automatically displays or downloads advertising material (often unwanted) when a user is online.", mitigation: "Install ad-blocking software, keep antivirus software up to date, be cautious of downloading free software from untrusted sources." },

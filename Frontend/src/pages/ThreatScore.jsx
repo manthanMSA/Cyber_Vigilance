@@ -90,6 +90,12 @@ const getMessage = (score, sectorMessage) => {
 
   return (
     <div className="threat-container">
+          <div className='alignment1 explain'> 
+        <p className='alignment'>Here we are using 2 columns in order to predict the threat score: </p>
+        <p className='alignment'><b>Severity:</b> It considers all the Attack Types and ranks them in a scale from 1 to 5 based on their severity.</p>
+        <p className='alignment'><b>Frequency_count:</b> This considers the frequency count of all the Attack_Types based on the Sector</p>
+        <p className='alignment'>The formula used for <b>Threat Score</b> is: <b>(Severity*Frequency_count) / sum(Frequency_count)</b></p>
+      </div>
       <div>
         <h2 className='spacing'>Select Sector:</h2>
         <select value={selectedSector} onChange={handleSectorChange}>
@@ -104,7 +110,7 @@ const getMessage = (score, sectorMessage) => {
           <div>
             <div className="doughnut" style={{ width: '300px', height: '300px' }}>
               <Doughnut className='display' data={data} options={options} />
-              <h2>Score: {selectedScore}</h2>
+              <h2>Threat Score: {selectedScore}</h2>
               
             </div>
             
@@ -115,7 +121,10 @@ const getMessage = (score, sectorMessage) => {
       <div className='text '>
             <p className='aligning '>{getMessage(selectedScore, sectorMessage)}</p> {/* Display message based on score and sector */}
       </div>
+
+
     </div>
+
     
   );
 };

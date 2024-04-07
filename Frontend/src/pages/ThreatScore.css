@@ -92,3 +92,21 @@
   .spacing{
     margin-top: 20px;
   }
+
+  .explain{
+    justify-content: center;
+    /* margin-top: 100px; */
+    display: block;
+    /* width: 50%; */
+    /* align-items: top; */
+    /* margin-top: 40px; */
+    padding: 30px 30px 30px 30px;
+    border-radius: 25%;
+    /* height: 300vh; */
+    background-color: #C4D8DE;
+    margin-bottom: 50px;
+  }
+
+  .alignment1{
+    text-align: left;
+  }
