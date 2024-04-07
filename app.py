@@ -18,6 +18,7 @@ llm = HuggingFaceEndpoint(
     repetition_penalty=1.03,
     huggingfacehub_api_token="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"
 )
+# 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
 
 template = """<s>[INST] You are a helpful, respectful and honest assistant. Answer exactly in few words from the context and topics related to contextgit 
 Answer the question below from context below:
